@@ -1,0 +1,123 @@
+@import './fonts.css';
+
+:root {
+  /* Brand palette */
+  --cream: #FCF9CF;
+  --yellow: #F8E293;
+  --orange: #EF914C;
+  --teal: #327C7C;
+  --blue: #1C5372;
+  --navy: #14364E;
+
+  --bg: var(--cream);
+  --ink: var(--navy);
+  --accent: var(--orange);
+
+  --font-display: 'Linewleum', sans-serif;
+  --font-display-raw: 'Linewleum Raw', sans-serif;
+  --font-body: 'Tomarik Introvert', sans-serif;
+  --font-accent: 'Tomarik Extrovert', sans-serif;
+
+  --container: 1180px;
+  --edge: clamp(1.25rem, 5vw, 4rem);
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, svg { display: block; max-width: 100%; }
+
+a { color: inherit; text-decoration: none; }
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  line-height: 0.95;
+  margin: 0;
+}
+
+.eyebrow {
+  font-family: var(--font-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.78rem;
+  color: var(--orange);
+}
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--edge);
+}
+
+.section {
+  padding: clamp(3.5rem, 9vw, 7rem) 0;
+  position: relative;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6em;
+  font-family: var(--font-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  padding: 0.95em 1.8em;
+  border-radius: 999px;
+  border: 2px solid var(--navy);
+  background: var(--navy);
+  color: var(--cream);
+  cursor: pointer;
+  transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
+}
+.btn:hover { transform: translateY(-2px); background: var(--orange); border-color: var(--orange); color: var(--navy); }
+
+.btn-outline {
+  background: transparent;
+  color: var(--navy);
+  border-color: var(--navy);
+}
+.btn-outline:hover { background: var(--navy); color: var(--cream); }
+
+/* Recolor monochrome brand SVGs to any palette color via CSS mask */
+.mask-icon {
+  display: inline-block;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  background-color: currentColor;
+}
+
+::selection { background: var(--orange); color: var(--cream); }
+
+@media (max-width: 720px) {
+  .nav-link { display: none; }
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--yellow);
+  opacity: 0.6;
+}
+
+@media (max-width: 860px) {
+  .two-col {
+    grid-template-columns: 1fr !important;
+  }
+}

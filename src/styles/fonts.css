@@ -1,0 +1,71 @@
+/* Linewleum — display/heading font */
+@font-face {
+  font-family: 'Linewleum';
+  src: url('../assets/fonts/Linewleum_Regular.otf') format('opentype'),
+       url('../assets/fonts/Linewleum_Regular.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Linewleum';
+  src: url('../assets/fonts/Linewleum_Light.otf') format('opentype'),
+       url('../assets/fonts/Linewleum_Light.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Linewleum';
+  src: url('../assets/fonts/Linewleum_Oblique.otf') format('opentype'),
+       url('../assets/fonts/Linewleum_Oblique.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+/* Raw = the distressed/stamped texture variant, used sparingly for hero impact */
+@font-face {
+  font-family: 'Linewleum Raw';
+  src: url('../assets/fonts/Linewleum_Raw.otf') format('opentype'),
+       url('../assets/fonts/Linewleum_Raw.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Tomarik — body / supporting font */
+@font-face {
+  font-family: 'Tomarik Introvert';
+  src: url('../assets/fonts/tomarik-introvert.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Tomarik Extrovert';
+  src: url('../assets/fonts/tomarik-extrovert.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Tomarik Poster';
+  src: url('../assets/fonts/tomarik-poster.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Tomarik Serif';
+  src: url('../assets/fonts/tomarik-serif.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Tomarik Brush';
+  src: url('../assets/fonts/tomarik-brush.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
